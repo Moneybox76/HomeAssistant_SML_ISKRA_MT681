@@ -1,0 +1,99 @@
+sensor:
+  - platform: filter
+    name: 'sml_output_momentane_leistung_summe_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_summe_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l1_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l1_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l2_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l2_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l3_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l3_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_wirkenergie_summe_t1_t2_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_summe_t1_t2_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
+  - platform: filter
+    name: 'sml_output_wirkenergie_verbrauch_hochtarif_t1_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_verbrauch_hochtarif_t1_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
+  - platform: filter
+    name: 'sml_output_wirkenergie_verbrauch_niedertarif_t2_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_verbrauch_niedertarif_t2_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
+  - platform: filter
+    name: 'sml_output_momentane_leistung_summe_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_summe_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l1_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l1_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l2_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l2_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_momentane_leistung_phase_l3_w_filtered'
+    entity_id: sensor.sml_output_momentane_leistung_phase_l3_w
+    filters:
+      - filter: time_throttle
+        window_size: 00:01:00
+        precision: 0
+  - platform: filter
+    name: 'sml_output_wirkenergie_summe_t1_t2_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_summe_t1_t2_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
+  - platform: filter
+    name: 'sml_output_wirkenergie_verbrauch_hochtarif_t1_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_verbrauch_hochtarif_t1_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
+  - platform: filter
+    name: 'sml_output_wirkenergie_verbrauch_niedertarif_t2_wh_filtered'
+    entity_id: sensor.sml_output_wirkenergie_verbrauch_niedertarif_t2_wh
+    filters:
+      - filter: time_throttle
+        window_size: 06:00:00
+        precision: 1
