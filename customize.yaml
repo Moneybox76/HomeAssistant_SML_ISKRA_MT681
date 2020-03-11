@@ -1,30 +1,30 @@
 sensor.sml_output_momentane_leistung_summe_w_filtered:
   friendly_name: Momentane Gesamtleistung (W)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: W
   device_class: power
 sensor.sml_output_momentane_leistung_phase_l1_w_filtered:
   friendly_name: Momentane Leistung Phase L1 (W)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: W
   device_class: power
 sensor.sml_output_momentane_leistung_phase_l2_w_filtered:
   friendly_name: Momentane Leistung Phase L2 (W)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: W
   device_class: power
 sensor.sml_output_momentane_leistung_phase_l3_w_filtered:
   friendly_name: Momentane Leistung Phase L3 (W)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: W
   device_class: power
 sensor.sml_output_wirkenergie_summe_t1_t2_wh_filtered:
   friendly_name: Gesamtverbrauch Wirkenergie T1 + T2 (Wh)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: Wh
   device_class: power
 sensor.sml_output_wirkenergie_verbrauch_hochtarif_t1_wh_filtered:
   friendly_name: Verbrauch Wirkenergie Hochtarif T1 (Wh)
-  icon: mdi:power-plug
+  icon: mdi:flash
   unit_of_measurement: Wh
   device_class: power
