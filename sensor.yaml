@@ -1,53 +1,53 @@
 sensor:
-  - platform: filter
-    name: 'sml_output_momentane_leistung_summe_w_filtered'
-    entity_id: sensor.sml_output_momentane_leistung_summe_w
-    filters:
-      - filter: time_throttle
-        window_size: 00:01:00
-        precision: 0
-  - platform: filter
-    name: 'sml_output_momentane_leistung_phase_l1_w_filtered'
-    entity_id: sensor.sml_output_momentane_leistung_phase_l1_w
-    filters:
-      - filter: time_throttle
-        window_size: 00:01:00
-        precision: 0
-  - platform: filter
-    name: 'sml_output_momentane_leistung_phase_l2_w_filtered'
-    entity_id: sensor.sml_output_momentane_leistung_phase_l2_w
-    filters:
-      - filter: time_throttle
-        window_size: 00:01:00
-        precision: 0
-  - platform: filter
-    name: 'sml_output_momentane_leistung_phase_l3_w_filtered'
-    entity_id: sensor.sml_output_momentane_leistung_phase_l3_w
-    filters:
-      - filter: time_throttle
-        window_size: 00:01:00
-        precision: 0
-  - platform: filter
-    name: 'sml_output_wirkenergie_summe_t1_t2_wh_filtered'
-    entity_id: sensor.sml_output_wirkenergie_summe_t1_t2_wh
-    filters:
-      - filter: time_throttle
-        window_size: 06:00:00
-        precision: 1
-  - platform: filter
-    name: 'sml_output_wirkenergie_verbrauch_hochtarif_t1_wh_filtered'
-    entity_id: sensor.sml_output_wirkenergie_verbrauch_hochtarif_t1_wh
-    filters:
-      - filter: time_throttle
-        window_size: 06:00:00
-        precision: 1
-  - platform: filter
-    name: 'sml_output_wirkenergie_verbrauch_niedertarif_t2_wh_filtered'
-    entity_id: sensor.sml_output_wirkenergie_verbrauch_niedertarif_t2_wh
-    filters:
-      - filter: time_throttle
-        window_size: 06:00:00
-        precision: 1
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Wirkenergie_Summe_T1_T2_Wh"
+    name: sml_output_wirkenergie_summe_t1_t2_wh
+    force_update: true
+    unit_of_measurement: 'Wh'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Wirkenergie_Verbrauch_Hochtarif_T1_Wh"
+    name: sml_output_wirkenergie_verbrauch_hochtarif_t1_wh
+    force_update: true
+    unit_of_measurement: 'Wh'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Wirkenergie_Verbrauch_Niedertarif_T2_Wh"
+    name: sml_output_wirkenergie_verbrauch_niedertarif_t2_wh
+    force_update: true
+    unit_of_measurement: 'Wh'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Momentane_Leistung_Summe_W"
+    name: sml_output_momentane_leistung_summe_w
+    force_update: true
+    unit_of_measurement: 'W'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Momentane_Leistung_Phase_L1_W"
+    name: sml_output_Momentane_leistung_phase_l1_w
+    force_update: true
+    unit_of_measurement: 'W'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Momentane_Leistung_Phase_L2_W"
+    name: sml_output_Momentane_leistung_phase_l2_w
+    force_update: true
+    unit_of_measurement: 'W'
+    icon: mdi:power-plug
+    device_class: power
+  - platform: mqtt
+    state_topic: "sml/ISKRA_MT681/Momentane_Leistung_Phase_L3_W"
+    name: sml_output_Momentane_leistung_phase_l3_w
+    force_update: true
+    unit_of_measurement: 'W'
+    icon: mdi:power-plug
+    device_class: power
   - platform: filter
     name: 'sml_output_momentane_leistung_summe_w_filtered'
     entity_id: sensor.sml_output_momentane_leistung_summe_w
