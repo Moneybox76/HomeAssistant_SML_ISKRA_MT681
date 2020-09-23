@@ -19,7 +19,7 @@ import json
 from threading import Timer
 import paho.mqtt.client as mqtt
 
-client = mqtt.Client("SML-python")
+client = mqtt.Client(client_id="SML-python", clean_session=False)
 client.username_pw_set(username=mqtt_username, password=mqtt_password)
 client.connect(mqtt_server, port=mqtt_server_port)
 client.loop_start()
